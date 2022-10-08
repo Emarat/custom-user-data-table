@@ -41,8 +41,8 @@ const usersData = () => {
         <div>
             <Form className="mb-3">
                 <h2 className='my-3'>Enter Name & Email for Specific User Data</h2>
-                <input className='mx-2' type="search" value={name} onChange={handleName} />
-                <input type="search" value={email} onChange={handleEmail} />
+                <input className='mx-2' type="search" value={name} onChange={handleName} placeholder="Name" />
+                <input type="search" value={email} onChange={handleEmail} placeholder="Email" />
             </Form>
 
 
@@ -78,7 +78,7 @@ const usersData = () => {
                 )
                     :
                     <>
-                        <h2 className='my-5'>Users Custom Table:</h2>
+                        <h2 className='my-5'>Your Searched Data:</h2>
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
